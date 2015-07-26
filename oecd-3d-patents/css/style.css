@@ -65,12 +65,12 @@ h1, h2, h3 {
     border-right: 2px solid #181818;
     font-size: 16px;
 }
-.rowSlim .changeElement
-{
+
+.rowSlim .changeElement {
     width: 350px;
 }
-.rowSlim .changeItem
-{
+
+.rowSlim .changeItem {
     width: 300px;
     z-index: 10;
 }
@@ -83,7 +83,7 @@ h1, h2, h3 {
     -webkit-appearance: none;
     padding-right: 30px;
     font-size: 16px;
-    width:200px;
+    width: 200px;
 }
 
 .rowSlim option {
@@ -117,14 +117,34 @@ p {
 
 #dataSource {
     position: absolute;
-    right:0px;
+    right: 0px;
     bottom: 30px;
 }
-#dataSource a:link {text-decoration: none; color:steelblue}      /* unvisited link */
-#dataSource a:visited {text-decoration: none; color:steelblue}  /* visited link */
-#dataSource a:hover {text-decoration: none; color:orange}  /* mouse over link */
-#dataSource a:active {text-decoration: none; color:steelblue}  /* selected link */
 
+#dataSource a:link {
+    text-decoration: none;
+    color: steelblue
+}
+
+/* unvisited link */
+#dataSource a:visited {
+    text-decoration: none;
+    color: steelblue
+}
+
+/* visited link */
+#dataSource a:hover {
+    text-decoration: none;
+    color: orange
+}
+
+/* mouse over link */
+#dataSource a:active {
+    text-decoration: none;
+    color: steelblue
+}
+
+/* selected link */
 
 /* Styles for the spark line*/
 
@@ -278,22 +298,24 @@ p {
 }
 
 #legend .height {
-    left:90%;
+    left: 90%;
 }
 
 #logo {
     position: absolute;
     top: 0px;
 }
-#logo a img{
-    width:33%;
+
+#logo a img {
+    width: 33%;
     height: 33%;
 }
+
 /* Left and right year arrow buttons */
 
 .buttons {
     position: absolute;
-    bottom:2em;
+    bottom: 2em;
     left: 0;
     padding-bottom: 2px;
 }
@@ -395,7 +417,7 @@ li {
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
     background: #ff8a00;
     border: none;
-    color:#000;
-    border-radius:0;
+    color: #000;
+    border-radius: 0;
     font-weight: normal;
 }
