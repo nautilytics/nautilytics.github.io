@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>OECD Patent Visualization</title>
+    <link href="css/style.css?20140103" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="statusBox">
+        <div id="status">&nbsp;</div>
+        <div class="logo"></div>
+    </div>
+</div>
+<div id="main">
+    <div id="menu">
+        <div class="row" style="height:5%;">
+            <p id="title">OECD Patent Data from 2000 to 2011</p>
+        </div>
+        <div class="row" style="height:15%;">
+            <div id="flag-container">
+                <img id="flag1" src="https://nautilytics.blob.core.windows.net/us-flags/noflag.gif">
+
+                <p class="country-name"></p>
+            </div>
+            <div id="spark-container">
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="row" style="height:10%;">
+            <p id="patent-applications"></p>
+
+            <p id="tag1">Patent applications filed under the PCT by <span class="item-name"></span></p>
+        </div>
+        <div class="row" style="height:10%;">
+            <p><span id="percent-change"></span> &Delta;</p>
+
+            <p>in <span class="element-name"></span> patents filed</p>
+        </div>
+        <div class="row" style="height:10%;">
+            <p id="country-ranking"></p>
+
+            <p>out of <span id="number-countries"></span> overall countries</p>
+        </div>
+        <div class="row" id="bar-comparison" style="height:25%;">
+            <p>Patents Filed Comparison with Similar Countries</p>
+            <svg id="bar-chart"></svg>
+        </div>
+        <div class="row" id="pie-breakdown" style="height:25%;">
+            <p>Breakdown of <span class="country-name"></span> Patent Types</p>
+
+            <div class="pieChart">
+                <div class="chart"></div>
+                <ul class="legend"></ul>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div class="rowSlim" id="dropdowns">
+        <div class="changeElement">Select Patent Type: <select></select></div>
+        <div class="changeItem">Select Item: <select></select></div>
+        <div class="overlayCountries noPointer" id="hudButtons">
+            <input id="countryDropDown" type="text" name="country" class="countryTextInput"
+                   value="United States">
+        </div>
+    </div>
+    <div id="container">
+        <div style="clear:both;"></div>
+        <div class='buttons' title='keyboard shortcut: left/right'>
+            <div class='button'>
+                <img id='year-left' alt='left-arrow'
+                     src='https://nautilytics.blob.core.windows.net/images/leftarrow32.png'/>
+            </div>
+            <div class='text'>
+                <p class='current-year'></p>
+            </div>
+            <div class='button'>
+                <img id='year-right' alt='right-arrow'
+                     src='https://nautilytics.blob.core.windows.net/images/arrowright32.png'/>
+            </div>
+            <div class='end'></div>
+        </div>
+        <div id="logo">
+            <a href="http://www.nautilytics.com" target="_blank">
+                <img src="https://nautilytics.blob.core.windows.net/images/white_logo.png">
+            </a>
+        </div>
+        <div id="legend">
+            <img src="https://nautilytics.blob.core.windows.net/images/3d_legend.png">
+
+            <div id="radiusHeader" class="radius" style="top:8%;">Patent Applications Filed</div>
+            <div id="radiusHigh" class="radius" style="top:28%;"></div>
+            <div id="radiusMedium" class="radius" style="top:34%;"></div>
+            <div id="radiusLow" class="radius" style="top:40%;"></div>
+            <div id="heightHeader" class="height" style="top:0%;left:68%">&Delta; in Patents Filed</div>
+            <div id="heightHigh" class="height" style="top:8%;"></div>
+            <div id="heightLow" class="height" style="top:68%;"></div>
+        </div>
+        <div id="dataSource">
+            Source: <a href="http://www.oecd.org/sti/inno/oecdpatentdatabases.htm" target="_blank">OECD Patent
+            Database</a>
+        </div>
+    </div>
+    <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox"
+        aria-activedescendant="ui-active-menuitem" style="z-index: 10002; top: 0; left: 0; display: none;"></ul>
+</div>
+<script src="https://nautilytics.blob.core.windows.net/d3-scripts/d3.v3.min.js"></script>
+<script src="https://nautilytics.blob.core.windows.net/d3-scripts/queue.v1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://nautilytics.blob.core.windows.net/threejs/jquery-ui.min.js"></script>
+<script src="https://nautilytics.blob.core.windows.net/d3-scripts/colorbrewer.v1.min.js"></script>
+<script src="https://nautilytics.blob.core.windows.net/threejs/three.min.js"></script>
+<script src="js/browserdetect.js?"></script>
+<script src="js/Tween.js"></script>
+<script src="js/RequestAnimationFrame.js"></script>
+<script src="js/OrbitControls.min.js"></script>
+<script src="js/SphereModel.min.js"></script>
+</body>
+</html>

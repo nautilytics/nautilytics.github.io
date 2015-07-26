@@ -1,0 +1,401 @@
+body, html {
+    font-family: "Helvetica", "Arial", "FreeSans", "Verdana", "Tahoma", "Lucida Sans", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #CCC;
+    font-size: 13px;
+    background: #324D4E;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    background-color: #141414;
+    max-width: 320px;
+    float: left;
+    height: 100%;
+}
+
+.row {
+    padding-left: 10px;
+    background: #2b2b2b;
+    background: -moz-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e1e1e), color-stop(100%, #313131));
+    background: -webkit-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: -o-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: -ms-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: linear-gradient(to top, #1e1e1e 0%, #313131 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e1e1e', endColorstr='#313131', GradientType=0);
+    border-bottom: 2px solid #121212;
+    border-right: 2px solid #181818;
+    border-left: 2px solid #181818;
+    border-top: 4px solid #3b3b3b;
+}
+
+.rowSlim {
+    width: 100%;
+    background: #2b2b2b;
+    background: -moz-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e1e1e), color-stop(100%, #313131));
+    background: -webkit-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: -o-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: -ms-linear-gradient(top, #1e1e1e 0%, #313131 100%);
+    background: linear-gradient(to top, #1e1e1e 0%, #313131 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e1e1e', endColorstr='#313131', GradientType=0);
+    border-bottom: 2px solid #121212;
+    border-right: 2px solid #181818;
+    border-left: 2px solid #181818;
+    border-top: 4px solid #3b3b3b;
+}
+
+.rowSlim div {
+    display: inline-block;
+    border-right: 2px solid #181818;
+    font-size: 16px;
+}
+.rowSlim .changeElement
+{
+    width: 350px;
+}
+.rowSlim .changeItem
+{
+    width: 300px;
+    z-index: 10;
+}
+
+.rowSlim select {
+    color: #9a9a9a;
+    background: url(https://nautilytics.blob.core.windows.net/images/down_arrow.png) no-repeat right;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    padding-right: 30px;
+    font-size: 16px;
+    width:200px;
+}
+
+.rowSlim option {
+    color: #9a9a9a;
+    background-color: #2b2b2b;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: 0;
+    top: 22px;
+}
+
+#flag1 {
+    border-bottom: 4px solid #565656;
+    border-right: 4px solid #212121;
+    border-left: 4px solid #212121;
+    height: 78px;
+}
+
+#container {
+    width: auto;
+    height: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+p {
+    margin: .2em 0 .4em 0;
+    line-height: 130%;
+    height: 20px;
+}
+
+#dataSource {
+    position: absolute;
+    right:0px;
+    bottom: 30px;
+}
+#dataSource a:link {text-decoration: none; color:steelblue}      /* unvisited link */
+#dataSource a:visited {text-decoration: none; color:steelblue}  /* visited link */
+#dataSource a:hover {text-decoration: none; color:orange}  /* mouse over link */
+#dataSource a:active {text-decoration: none; color:steelblue}  /* selected link */
+
+
+/* Styles for the spark line*/
+
+#flag-container {
+    width: 50%;
+    height: 113px;
+    float: left;
+    padding-top: 5px;
+}
+
+#spark-container {
+    width: 50%;
+    height: 113px;
+    float: left;
+}
+
+.spark {
+    width: 100%;
+    height: 113px;
+    visibility: hidden;
+}
+
+.spark path {
+    stroke: #ddd;
+    stroke-width: 3;
+    fill: none;
+}
+
+.spark circle {
+    fill: #ddd;
+    stroke: none;
+}
+
+.spark text {
+    fill: #ddd;
+}
+
+/* Styles for the bar chart comparison */
+
+#bar-chart {
+    height: 130px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#bar-chart text {
+    font: 10px sans-serif;
+    fill: white;
+    text-anchor: end;
+}
+
+.axis path {
+    display: none;
+}
+
+.axis line {
+    stroke: #fff;
+    stroke-opacity: .5;
+    shape-rendering: crispEdges;
+}
+
+/* Styles for the pie breakdown chart */
+
+#pie-breakdown, #bar-comparison {
+    padding: 5px;
+}
+
+.pieChart {
+    height: 130px;
+    width: 100%;
+}
+
+.pieChart text {
+    fill: white;
+    font-size: 10px;
+}
+
+.pieChart .chart {
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+.pieChart .legend {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-overflow: ellipsis;
+    width: 55%;
+    height: 100%;
+}
+
+.pieChart .legend i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.pieChart .legend li {
+    font-size: 10px;
+    padding-bottom: 4px;
+}
+
+/* Preloader */
+
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; /* change if the mask should have another color then white */
+    z-index: 99; /* makes sure it stays on top */
+}
+
+#preloader .logo {
+    width: 468px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('https://nautilytics.blob.core.windows.net/images/logo2.png');
+}
+
+#status {
+    width: 50px;
+    height: 50px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('https://nautilytics.blob.core.windows.net/images/status.gif') no-repeat center;
+}
+
+#legend {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+}
+
+#legend div {
+    position: absolute;
+    text-align: right;
+}
+
+#legend .radius {
+    left: 15%;
+}
+
+#legend .height {
+    left:90%;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+}
+#logo a img{
+    width:33%;
+    height: 33%;
+}
+/* Left and right year arrow buttons */
+
+.buttons {
+    position: absolute;
+    bottom:2em;
+    left: 0;
+    padding-bottom: 2px;
+}
+
+.buttons .button {
+    width: 32px;
+    padding-right: 4px;
+    padding-left: 4px;
+    float: left;
+    cursor: pointer;
+}
+
+.buttons .button img {
+    border: solid #222 1px;
+}
+
+.buttons .button img:hover {
+    border: solid #ddd 1px;
+}
+
+.buttons .text {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+}
+
+.buttons .end {
+    clear: both;
+}
+
+/* Country search input and button */
+
+#hudButtons {
+    position: absolute;
+    top: 0px;
+    right: 0;
+
+}
+
+#hudButtons .countryTextInput {
+    float: right;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    border: 1px solid silver;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type='text'] {
+    -webkit-touch-callout: default;
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+
+}
+
+/* Country search list */
+
+li {
+    list-style-type: none;
+}
+
+.ui-autocomplete {
+    position: absolute;
+}
+
+.ui-autocomplete .ui-menu-item {
+    border-top: 1px solid #656565;
+    margin-left: -39px;
+    padding-left: 4px;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    width: 301px;
+}
+
+.ui-autocomplete #ui-active-menuitem {
+    background: white;
+    color: black;
+    width: 301px;
+    display: block;
+    margin-left: -4px;
+    padding-left: 4px;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    background: #ff8a00;
+    border: none;
+    color:#000;
+    border-radius:0;
+    font-weight: normal;
+}
