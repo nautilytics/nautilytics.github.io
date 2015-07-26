@@ -37,11 +37,11 @@
         tiles: ['http://wjr.cdn.nautilytics.com.global.prod.fastly.net/{z}/{x}/{y}.png?color=red&opacity=.05&width=.5']
     };
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 12,
         zoomControlOptions: {
             style: google.maps.ZoomControlStyle.SMALL
         },
-        center: new google.maps.LatLng(51.5072, -0.1275) // London
+        center: new google.maps.LatLng(51.4990014, -0.1336216) // London
     });
     map.overlayMapTypes.insertAt(0, new wax.g.connector(runningTiles));
 
