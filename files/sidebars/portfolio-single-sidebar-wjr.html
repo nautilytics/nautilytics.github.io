@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+</head>
+
+<body>
+
+<!-- PAGE CONTENT -->
+<div id="page-content" class="fixed-header">
+
+    <!-- PAGEBODY -->
+    <div class="page-body">
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <div id="portfolio-single" class="section-inner">
+                <div class="wrapper clearfix">
+
+                    <div class="section-title project-title">
+                        <h2 class="project-name">Popular Running Routes</h2>
+                    </div>
+
+                    <div class="main-content left-float">
+                        <!-- GALLERY -->
+                        <div class="entry-media portfolio-media">
+                            <div class="flexslider portfolio-slider">
+                                <ul class="slides">
+                                    <li><img src="files/images/projects/thumbnail/wjr_thumb_web_ready_1.jpg"
+                                             alt="WalkJogRun Popular Running Routes in Boston"/></li>
+                                    <li><img src="files/images/projects/thumbnail/wjr_thumb_web_ready_2.jpg"
+                                             alt="WalkJogRun GPS Density Plot"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- GALLERY -->
+                    </div>
+                    <!-- END .main-content -->
+
+                    <!-- SIDEBAR -->
+                    <aside class="right-float">
+                        <div class="entry-content portfolio-content">
+                            <div class="accordion">
+                                <div class="toggle-item">
+                                    <div class="toggle-title toggle-active">
+                                        <div class="toggle-icon"><i class="fa fa-plus"></i><i class="fa fa-minus"></i>
+                                        </div>
+                                        <h6 class="toggle-name"><strong>Context</strong></h6>
+                                    </div>
+                                    <div class="toggle-inner"><a href="http://walkjogrun.net" target="_blank">WalkJogRun
+                                        (WJR)</a> approached me looking to create a mapping tile server to overlay their
+                                        vast collection of user-created running routes onto their existing mobile and
+                                        web application. Over the course of the project, we saw that in some major
+                                        cities, where there was a high density of running routes, the map started to
+                                        show the safer and more scenic areas of the city for running, useful information
+                                        for any runner new to the city.
+                                    </div>
+                                </div>
+                                <div class="toggle-item">
+                                    <div class="toggle-title">
+                                        <div class="toggle-icon"><i class="fa fa-plus"></i><i class="fa fa-minus"></i>
+                                        </div>
+                                        <h6 class="toggle-name"><strong>Data</strong></h6>
+                                    </div>
+                                    <div class="toggle-inner">Over 1 million GPS tracked and time stamped running routes
+                                        from WalkJogRun users over a five-year period.
+                                    </div>
+                                </div>
+                                <div class="toggle-item">
+                                    <div class="toggle-title">
+                                        <div class="toggle-icon"><i class="fa fa-plus"></i><i class="fa fa-minus"></i>
+                                        </div>
+                                        <h6 class="toggle-name"><strong>Tech Notes</strong></h6>
+                                    </div>
+                                    <div class="toggle-inner">
+                                        <ul>
+                                            <li>This project allowed me to build a solid and reusable infrastructure for
+                                                serving up dynamically created map tiles with Mapnik from a PostGIS
+                                                database.
+                                            </li>
+                                            <li>Given the 54 million map tile requests and the 111GB of tile bandwidth
+                                                on average each month, I found Fastly to be an excellent CDN solution
+                                                for caching the tiles around the world.
+                                            </li>
+                                            <li>The front-end is built using a Wax connector for handling the tile
+                                                requests and Google Maps.
+                                            </li>
+                                            <li>The back-end technologies include PostgreSQL, PostGIS, Mapnik, Node.js,
+                                                and Express.
+                                            </li>
+                                            <li>Black and yellow dot density map was created using data and image
+                                                processing libraries in Python.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="toggle-item">
+                                    <div class="toggle-title">
+                                        <div class="toggle-icon"><i class="fa fa-plus"></i><i class="fa fa-minus"></i>
+                                        </div>
+                                        <h6 class="toggle-name"><strong>Live Demo</strong></h6>
+                                    </div>
+                                    <div class="toggle-inner">
+                                        <a href="http://nautilytics.github.io/wjr-gps-routes" target="_blank">WalkJogRun
+                                            Popular Routes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- SIDEBAR -->
+
+                </div>
+                <!-- END .wrapper -->
+
+                <div class="spacer spacer-big"></div>
+
+            </div>
+            <!-- END #portfolio-single .section-inner -->
+        </section>
+        <!-- END SECTION #portfolio-->
+        <!-- PORTFOLIO SECTION -->
+
+    </div>
+    <!-- END .page-body -->
+    <!-- PAGEBODY -->
+
+</div>
+<!-- END #page-content -->
+<!-- PAGE CONTENT -->
+
+</body>
+</html>
