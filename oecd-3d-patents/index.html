@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>OECD Patent Visualization</title>
-    <link href="css/style.css?20140103" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <!-- Preloader -->
@@ -28,17 +28,17 @@
             </div>
             <div style="clear:both;"></div>
         </div>
-        <div class="row" style="height:10%;">
+        <div class="row" style="height:8%;">
             <p id="patent-applications"></p>
 
             <p id="tag1">Patent applications filed under the PCT by <span class="item-name"></span></p>
         </div>
-        <div class="row" style="height:10%;">
+        <div class="row" style="height:8%;">
             <p><span id="percent-change"></span> &Delta;</p>
 
             <p>in <span class="element-name"></span> patents filed</p>
         </div>
-        <div class="row" style="height:10%;">
+        <div class="row" style="height:8%;">
             <p id="country-ranking"></p>
 
             <p>out of <span id="number-countries"></span> overall countries</p>
@@ -81,13 +81,13 @@
             </div>
             <div class='end'></div>
         </div>
-        <div id="logo">
-            <a href="http://nautilytics.github.io" target="_blank">
-                <img src="https://nautilytics.blob.core.windows.net/images/white_logo.png">
-            </a>
-        </div>
+        <!--        <div id="logo">-->
+        <!--            <a href="http://nautilytics.github.io" target="_blank">-->
+        <!--                <img src="https://nautilytics.blob.core.windows.net/images/white_logo.png">-->
+        <!--            </a>-->
+        <!--        </div>-->
         <div id="legend">
-            <img src="https://nautilytics.blob.core.windows.net/images/3d_legend.png">
+            <!--            <img src="https://nautilytics.blob.core.windows.net/images/3d_legend.png">-->
 
             <div id="radiusHeader" class="radius" style="top:8%;">Patent Applications Filed</div>
             <div id="radiusHigh" class="radius" style="top:28%;"></div>
@@ -101,12 +101,12 @@
             Source: <a href="http://www.oecd.org/sti/inno/oecdpatentdatabases.htm" target="_blank">OECD Patent
             Database</a>
         </div>
+        `
     </div>
     <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox"
         aria-activedescendant="ui-active-menuitem" style="z-index: 10002; top: 0; left: 0; display: none;"></ul>
 </div>
-<script src="js/vendor/d3.v3.min.js"></script>
-<script src="js/vendor/queue.v1.min.js"></script>
+<script src="js/vendor/d3.v5.min.js"></script>
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/jquery-ui.min.js"></script>
 <script src="js/vendor/colorbrewer.v1.min.js"></script>
@@ -115,6 +115,6 @@
 <script src="js/Tween.js"></script>
 <script src="js/RequestAnimationFrame.js"></script>
 <script src="js/OrbitControls.min.js"></script>
-<script src="js/SphereModel.min.js"></script>
+<script src="js/SphereModel.js"></script>
 </body>
 </html>

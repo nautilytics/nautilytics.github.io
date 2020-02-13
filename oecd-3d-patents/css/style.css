@@ -185,10 +185,8 @@ p {
 /* Styles for the bar chart comparison */
 
 #bar-chart {
-    height: 130px;
-    width: 100%;
-    padding-left: 10px;
-    padding-top: 10px;
+    height: 200px;
+    width: 320px;
 }
 
 #bar-chart text {
